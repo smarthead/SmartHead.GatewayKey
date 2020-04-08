@@ -15,7 +15,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
-    <PackageReference Include="Microsoft.IdentityModel" Version="7.0.0" />
     <PackageReference Include="EF.DataProtection.Services" Version="1.1.1" />
     <PackageReference Include="SmartHead.Essentials.Abstractions" Version="0.0.4" />
   </ItemGroup>
