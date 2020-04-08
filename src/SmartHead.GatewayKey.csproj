@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>SmartHead.GatewayKey</AssemblyName>
+    <IsPackable>true</IsPackable>
+    <Authors>Rustam Asylgareev, Dmitry Dmitriev</Authors>
+    <PackageProjectUrl>https://github.com/smarthead-dev/SmartHead.GatewayKey</PackageProjectUrl>
+    <Version>0.0.1</Version>
+    <Company>SmartHead</Company>
+    <IsTestProject>false</IsTestProject>
+    <Description>SmartHead.GatewayKey</Description>
   </PropertyGroup>
 
   <ItemGroup>
