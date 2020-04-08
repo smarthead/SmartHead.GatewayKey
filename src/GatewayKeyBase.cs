@@ -13,7 +13,7 @@ namespace SmartHead.GatewayKey
 
         public bool IsRevokeRequired { get; protected set; }
 
-        protected GatewayKeyBase(string key, string name, Type gatewayType)
+        protected GatewayKeyBase(string key, string name, GatewayKeyType gatewayType)
         {
             if (string.IsNullOrEmpty(key))
                 throw new ArgumentNullException(nameof(key));
@@ -50,7 +50,7 @@ namespace SmartHead.GatewayKey
 
         public bool IsActive { get; protected set; }
 
-        public Type GatewayType { get; set; }
+        public GatewayKeyType GatewayType { get; set; }
 
         public bool Equals(GatewayKeyBase other)
         {

@@ -49,14 +49,14 @@ namespace SmartHead.GatewayKey
 
             switch (key.GatewayType)
             {
-                case GatewayKeyBase.Type.Microservice:
-                    claims.Add(new Claim(ClaimTypes.Spn, nameof(GatewayKeyBase.Type.Microservice)));
+                case GatewayKeyType.Microservice:
+                    claims.Add(new Claim(ClaimTypes.Spn, nameof(GatewayKeyType.Microservice)));
                     break;
-                case GatewayKeyBase.Type.Device:
-                    claims.Add(new Claim(ClaimTypes.Spn, nameof(GatewayKeyBase.Type.Device)));
+                case GatewayKeyType.Device:
+                    claims.Add(new Claim(ClaimTypes.Spn, nameof(GatewayKeyType.Device)));
                     break;
-                case GatewayKeyBase.Type.ThirdParty:
-                    claims.Add(new Claim(ClaimTypes.Spn, nameof(GatewayKeyBase.Type.ThirdParty)));
+                case GatewayKeyType.ThirdParty:
+                    claims.Add(new Claim(ClaimTypes.Spn, nameof(GatewayKeyType.ThirdParty)));
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
