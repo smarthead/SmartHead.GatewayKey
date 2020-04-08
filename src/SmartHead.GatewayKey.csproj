@@ -6,7 +6,7 @@
     <IsPackable>true</IsPackable>
     <Authors>Rustam Asylgareev, Dmitry Dmitriev</Authors>
     <PackageProjectUrl>https://github.com/smarthead-dev/SmartHead.GatewayKey</PackageProjectUrl>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <Company>SmartHead</Company>
     <IsTestProject>false</IsTestProject> 
     <Description>SmartHead.GatewayKey</Description>
@@ -15,7 +15,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
-    <PackageReference Include="EF.DataProtection.Services" Version="1.1.1" />
+    <PackageReference Include="EF.DataProtection.Services" Version="1.2.0" />
     <PackageReference Include="SmartHead.Essentials.Abstractions" Version="0.0.4" />
   </ItemGroup>
 
