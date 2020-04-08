@@ -7,13 +7,6 @@ namespace SmartHead.GatewayKey
 {
     public abstract class GatewayKeyBase : Entity, IEquatable<GatewayKeyBase>
     {
-        public enum Type
-        {
-            Microservice,
-            Device,
-            ThirdParty
-        }
-
         protected GatewayKeyBase()
         {
         }
