@@ -11,7 +11,8 @@ using Microsoft.Extensions.Options;
 
 namespace SmartHead.GatewayKey
 {
-    public class GatewayKeyAuthenticationHandler : AuthenticationHandler<GatewayKeyAuthenticationOptions>
+    public class GatewayKeyAuthenticationHandler<T> : AuthenticationHandler<GatewayKeyAuthenticationOptions>
+        where T : GatewayKeyBase
     {
         private readonly DbContext _context;
 
@@ -36,7 +37,7 @@ namespace SmartHead.GatewayKey
                 return AuthenticateResult.NoResult();
 
             var key = await _context
-                .Set<GatewayKeyBase>()
+                .Set<T>()
                 .FirstOrDefaultAsync(x => x.Key == header);
 
             if (key == null || !key.IsActive)
