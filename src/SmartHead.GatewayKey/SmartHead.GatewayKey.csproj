@@ -6,7 +6,7 @@
     <IsPackable>true</IsPackable>
     <Authors>Rustam Asylgareev, Dmitry Dmitriev</Authors>
     <PackageProjectUrl>https://github.com/smarthead-dev/SmartHead.GatewayKey</PackageProjectUrl>
-    <Version>0.0.6</Version>
+    <Version Condition="$(Configuration) != Debug">1.0.$(GITHUB_RUN_NUMBER)</Version>
     <Company>SmartHead</Company>
     <IsTestProject>false</IsTestProject> 
     <Description>SmartHead.GatewayKey</Description>
